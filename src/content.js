@@ -55,7 +55,7 @@ export const PILLARS = [
    "The most valuable opportunities often emerge at the intersection of market demand, infrastructure availability, public policy, economic incentives, financing structures and strategic partnerships.",
    "Organizations that understand those connections can identify value that others overlook and evaluate opportunities with a more complete view of execution risk.",
    "@The Texas Advantage comes from recognizing opportunity before it becomes obvious.",
-   "GRIDS helps clients evaluate transactions, development strategies, incentive programs, investment structures and growth opportunities through a coordinated lens that reflects the realities of the Texas market."],
+   "Gray Reed's GRIDS team helps clients evaluate transactions, development strategies, incentive programs, investment structures and growth opportunities through a coordinated lens that reflects the realities of the Texas market."],
   focus:["Economic development incentives","Tax strategies","Joint ventures","Investment structures","Mergers and acquisitions","Development partnerships","Capital deployment","Growth planning"],
   message:"The Texas Advantage means recognizing opportunity before competitors do."},
  {id:"relationships", n:"05", short:"Relationships",

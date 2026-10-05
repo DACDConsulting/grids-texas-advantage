@@ -83,7 +83,7 @@ export const PILLARS = [
    "The state's energy markets operate differently. Water issues can require specialized knowledge. Legislative and regulatory priorities continue to evolve. Communities and local stakeholders bring different concerns to project development. Texas courts and local procedures may create additional considerations when disputes arise.",
    "Success often depends on having advisers who understand both the broader transaction and the Texas-specific realities that affect it.",
    "@GRIDS serves as a collaborative Texas partner for law firms advising clients across the data center ecosystem. Our role is to add targeted Texas capabilities, strengthen the broader counsel team and help protect the client relationship.",
-   "Whether the need involves a transaction, government affairs, infrastructure strategy, public affairs, development, regulatory issues or a dispute, the GRIDS team works with outside counsel to help clients navigate Texas more effectively."],
+   "Whether the need involves a transaction, government affairs, infrastructure strategy, public affairs, development, regulatory issues or a dispute, the GRIDS team at Gray Reed works with outside counsel to help clients navigate Texas more effectively."],
   focus:["Local counsel support","Texas regulatory matters","Government affairs","Water law","Energy and infrastructure","Public affairs","Development strategy","Dispute resolution"],
   message:"The Texas Advantage includes a trusted Texas partner who strengthens the client's existing counsel team."}
 ];

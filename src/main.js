@@ -39,24 +39,30 @@ function homeHTML(){
   ];
   const experience = [
     ["Development and investment", [
-      "Represent landowners in joint venture and co-investment planning for data center development.",
-      "Represent a data center developer in negotiating equity funding from a private equity sponsor to fund project development."
+      ["", "Represent landowners in joint venture and co-investment planning for data center development."],
+      ["", "Represent a data center developer in negotiating equity funding from a private equity sponsor to fund project development."]
     ]],
     ["Tax and incentives", [
-      "Represent data center investors, developers and landowners in complex tax planning, special allocations of depreciation, and project exit planning.",
-      "Secure local tax incentives for a data center developer."
+      ["", "Represent data center investors, developers and landowners in complex tax planning, special allocations of depreciation, and project exit planning."],
+      ["", "Secure local tax incentives for a data center developer."],
+      ["State-level tax incentives", "Assist clients with state-level tax incentives and advise on proposals that would change or repeal those incentives."]
     ]],
     ["Construction", [
-      "Represent a data center developer in a complex payment dispute with the general contractor constructing a large-scale data center.",
-      "Negotiate construction contracts on behalf of subcontractors and suppliers for data centers."
+      ["", "Represent a data center developer in a complex payment dispute with the general contractor constructing a large-scale data center."],
+      ["", "Negotiate construction contracts on behalf of subcontractors and suppliers for data centers."]
     ]],
     ["Energy infrastructure and land", [
-      "Represent a capital provider in funding natural gas pipeline development to supply a co-located power plant within a large data center project.",
-      "Represent a large landowner in negotiating land use and a potential co-investment with a data center developer seeking to develop natural gas pipeline, power generation and transmission facilities on site, co-located with the data center."
+      ["", "Represent a capital provider in funding natural gas pipeline development to supply a co-located power plant within a large data center project."],
+      ["", "Represent a large landowner in negotiating land use and a potential co-investment with a data center developer seeking to develop natural gas pipeline, power generation and transmission facilities on site, co-located with the data center."]
+    ]],
+    ["Government affairs", [
+      ["Legislative and regulatory monitoring", "Track all legislative and regulatory activity affecting data center development in Texas, including bills, interim charges, committee hearings, and agency actions at the PUC, ERCOT, TCEQ, and TWDB."],
+      ["Executive action tracking", "Follow the Governor's data center directives and the resulting agency audits, permitting pauses, and reporting deadlines, and brief clients on what each means for their projects and timelines."],
+      ["Stakeholder engagement", "Work with legislators, statewide leadership offices, agency staff, local officials, and industry coalitions to keep clients' projects and priorities in front of decision makers."]
     ]],
     ["Public affairs", [
-      "Provide comprehensive public relations and communications services to a Colorado-based data center operator developing three facilities in Texas, including community engagement strategy, stakeholder and elected official outreach, media relations, social media management and issues readiness. Services provided by GRPR."
-    ]]
+      ["", "Provide comprehensive public relations and communications services to a Colorado-based data center operator developing three facilities in Texas, including community engagement strategy, stakeholder and elected official outreach, media relations, social media management and issues readiness."]
+    ], "Through GRPR"]
   ];
   const serve = ["Data center developers","Hyperscalers and AI infrastructure providers","Data center operators","Private equity sponsors","Infrastructure funds","Real estate investors","Texas landowners","Utilities and power providers","Economic development organizations","National and international law firms"];
   const topics = ["Legislative updates","Water and infrastructure developments","Grid and power market intelligence","Tax incentive trends","Community and public affairs insights","Data center market intelligence"];
@@ -130,14 +136,9 @@ function homeHTML(){
 
       <section id="experience">
         <h2>Representative Experience</h2>
-        <p class="xlead">Select an area to see the matters.</p>
-        <div class="xpanel">
-          <div class="xnav" role="tablist" aria-label="Experience areas">
-            ${experience.map(([group], i)=>`<button type="button" class="xarea${i===0?" on":""}" role="tab" aria-selected="${i===0?"true":"false"}" data-x="${i}"><span>${esc(group)}</span></button>`).join("")}
-          </div>
-          <div class="xstage">
-            ${experience.map(([group, items], i)=>`<div class="xbody${i===0?" on":""}" role="tabpanel" data-xpanel="${i}" ${i===0?"":"hidden"}><h3 class="rd">${esc(group)}</h3>${group==="Public affairs"?'<span class="via">Through GRPR</span>':""}<ul class="bul">${items.map(item=>`<li>${esc(item.replace(" Services provided by GRPR.",""))}</li>`).join("")}</ul></div>`).join("")}
-          </div>
+        <p class="xlead">Open an area to see the work.</p>
+        <div class="xacc">
+          ${experience.map(([group, items, via], i)=>`<div class="xitem${i===0?" on":""}"><button type="button" class="xacc-btn" aria-expanded="${i===0?"true":"false"}"><span>${esc(group)}</span></button><div class="xacc-body" ${i===0?"":"hidden"}>${via?`<span class="via">${esc(via)}</span>`:""}<ul class="xmatter">${items.map(([title, text])=>`<li>${title?`<b>${esc(title)}</b>`:""}<span>${esc(text)}</span></li>`).join("")}</ul></div></div>`).join("")}
         </div>
         <h2 class="serve-head">Who We Serve</h2>
         <ul class="bul cols">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
@@ -203,18 +204,15 @@ function renderCountdown(){
 }
 
 document.addEventListener("click", e=>{
-  const area = e.target.closest("[data-x]"); if(!area) return;
-  const panel = area.closest(".xpanel"); if(!panel) return;
-  const id = area.getAttribute("data-x");
-  panel.querySelectorAll(".xarea").forEach(btn=>{
-    const on = btn===area;
-    btn.classList.toggle("on", on);
-    btn.setAttribute("aria-selected", on?"true":"false");
-  });
-  panel.querySelectorAll("[data-xpanel]").forEach(body=>{
-    const on = body.getAttribute("data-xpanel")===id;
-    body.classList.toggle("on", on);
-    body.hidden = !on;
+  const btn = e.target.closest(".xacc-btn"); if(!btn) return;
+  const item = btn.closest(".xitem");
+  const acc = btn.closest(".xacc");
+  const open = !item.classList.contains("on");
+  acc.querySelectorAll(".xitem").forEach(row=>{
+    const on = open && row===item;
+    row.classList.toggle("on", on);
+    row.querySelector(".xacc-btn").setAttribute("aria-expanded", on?"true":"false");
+    row.querySelector(".xacc-body").hidden = !on;
   });
 });
 

@@ -125,8 +125,16 @@ ul.cols{columns:2;column-gap:36px}
 ul.cols li{break-inside:avoid;margin-bottom:4px}
 .kick{font-family:var(--font-semi);font-weight:700;color:var(--burgundy);font-size:19px}
 
-.xgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 40px}
-.xgroup h3.rd{margin-bottom:8px}
+.xlead{margin:-6px 0 16px;max-width:62ch}
+.xpanel{display:grid;grid-template-columns:240px minmax(0,1fr);border:1px solid var(--line);min-height:280px}
+.xnav{display:flex;flex-direction:column;border-right:1px solid var(--line);background:var(--tint)}
+.xarea{display:flex;justify-content:space-between;gap:12px;align-items:baseline;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);padding:16px 16px;cursor:pointer;font-family:var(--font);font-size:16px;color:var(--head)}
+.xarea i{font-style:normal;font-size:12px;letter-spacing:.08em;color:var(--mute)}
+.xarea.on{background:var(--white);color:var(--burgundy);box-shadow:inset 3px 0 var(--gold)}
+.xarea:hover{color:var(--burgundy)}
+.xstage{padding:22px 24px}
+.xbody h3.rd{margin-bottom:8px}
+.xbody .via{display:inline-block;margin-bottom:12px}
 .serve-head{margin-top:28px}
 .pgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
 .pc{padding:22px 24px 22px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px;min-width:0}
@@ -226,6 +234,8 @@ footer nav span{opacity:.95}
   .spot{min-height:0}
   .pgrid{grid-template-columns:minmax(0,1fr)}
   .xgrid{grid-template-columns:minmax(0,1fr)}
+  .xpanel{grid-template-columns:minmax(0,1fr)}
+  .xnav{border-right:0;border-bottom:1px solid var(--line)}
   .split{grid-template-columns:minmax(0,1fr)}
   .plinks{grid-template-columns:minmax(0,1fr)}
   .pc,.pc:nth-child(even){padding-left:0;padding-right:0;border-left:0}

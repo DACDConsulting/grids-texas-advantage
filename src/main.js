@@ -130,8 +130,14 @@ function homeHTML(){
 
       <section id="experience">
         <h2>Representative Experience</h2>
-        <div class="xgrid">
-          ${experience.map(([group, items])=>`<div class="xgroup"><h3 class="rd">${esc(group)}</h3><ul class="bul">${items.map(item=>`<li>${esc(item)}</li>`).join("")}</ul></div>`).join("")}
+        <p class="xlead">Select an area to see the matters.</p>
+        <div class="xpanel">
+          <div class="xnav" role="tablist" aria-label="Experience areas">
+            ${experience.map(([group, items], i)=>`<button type="button" class="xarea${i===0?" on":""}" role="tab" aria-selected="${i===0?"true":"false"}" data-x="${i}"><span>${esc(group)}</span><i>${items.length}</i></button>`).join("")}
+          </div>
+          <div class="xstage">
+            ${experience.map(([group, items], i)=>`<div class="xbody${i===0?" on":""}" role="tabpanel" data-xpanel="${i}" ${i===0?"":"hidden"}><h3 class="rd">${esc(group)}</h3>${group==="Public affairs"?'<span class="via">Through GRPR</span>':""}<ul class="bul">${items.map(item=>`<li>${esc(item.replace(" Services provided by GRPR.",""))}</li>`).join("")}</ul></div>`).join("")}
+          </div>
         </div>
         <h2 class="serve-head">Who We Serve</h2>
         <ul class="bul cols">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
@@ -195,6 +201,22 @@ function renderCountdown(){
     ? `<span class="lbl">90th Texas Legislature</span><b>${days} days</b><span>until the session convenes on January 12, 2027. The policy conversations are already underway.</span>`
     : `<span class="lbl">90th Texas Legislature</span><b>In session</b><span>The 90th Legislature convened January 12, 2027.</span>`;
 }
+
+document.addEventListener("click", e=>{
+  const area = e.target.closest("[data-x]"); if(!area) return;
+  const panel = area.closest(".xpanel"); if(!panel) return;
+  const id = area.getAttribute("data-x");
+  panel.querySelectorAll(".xarea").forEach(btn=>{
+    const on = btn===area;
+    btn.classList.toggle("on", on);
+    btn.setAttribute("aria-selected", on?"true":"false");
+  });
+  panel.querySelectorAll("[data-xpanel]").forEach(body=>{
+    const on = body.getAttribute("data-xpanel")===id;
+    body.classList.toggle("on", on);
+    body.hidden = !on;
+  });
+});
 
 /* ---------- In-page scroll links ---------- */
 document.addEventListener("click", e=>{

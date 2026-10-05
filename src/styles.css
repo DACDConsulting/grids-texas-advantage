@@ -130,7 +130,7 @@ ul.cols li{break-inside:avoid;margin-bottom:4px}
 .xitem{border-bottom:1px solid var(--line)}
 .xacc-btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:transparent;border:0;padding:16px 2px;cursor:pointer;font-family:var(--font-light);font-style:italic;font-size:20px;color:var(--burgundy)}
 .xacc-btn::after{content:"+";font-style:normal;font-family:var(--font);color:var(--burgundy);font-size:22px;line-height:1}
-.xitem.on .xacc-btn::after{content:"\\2013"}
+.xitem.on .xacc-btn::after{content:"–"}
 .xacc-body{padding:0 2px 18px}
 .xacc-body .via{display:inline-block;margin-bottom:10px}
 .xmatter{list-style:none;margin:0;padding:0;display:grid;gap:12px}

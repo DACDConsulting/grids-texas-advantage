@@ -42,7 +42,7 @@ function homeHTML(){
   const topics = ["Legislative updates","Water and infrastructure developments","Grid and power market intelligence","Tax incentive trends","Community and public affairs insights","Data center market intelligence"];
   return `
   <div class="band"><div class="wrap">
-    <div><div class="crumb"><a href="#overview">Industries</a></div><h1>Data Centers</h1></div>
+    <div><h1>Data Centers</h1></div>
     <div class="tools"><span>PDF</span><span>Email</span></div>
   </div></div>
 
@@ -138,7 +138,7 @@ function pillarHTML(p){
   const body = p.body.map((t,k)=> t.startsWith("@") ? `<p class="adv">${esc(t.slice(1))}</p>` : `<p${k===0?' class="lead"':""}>${esc(t)}</p>`).join("");
   return `
   <div class="band"><div class="wrap">
-    <div><div class="crumb"><a href="#overview">Data Centers</a> / The Texas Advantage / Pillar ${p.n}</div><h1>${esc(p.title)}</h1></div>
+    <div><h1>${esc(p.title)}</h1></div>
     <div class="tools"><span>PDF</span><span>Email</span></div>
   </div></div>
   <div class="wrap page">

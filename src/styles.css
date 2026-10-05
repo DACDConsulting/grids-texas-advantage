@@ -45,9 +45,6 @@ p{margin:0}
 /* Burgundy title band */
 .band{background:var(--burgundy);color:var(--white)}
 .band .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:30px 32px;flex-wrap:wrap}
-.band .crumb{font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--font);opacity:.85;margin-bottom:6px}
-.band .crumb a{text-decoration:none}
-.band .crumb a:hover{text-decoration:underline}
 .band h1{color:var(--white);font-family:var(--font-semi);font-weight:700;font-size:clamp(30px,3.6vw,44px);line-height:1.1}
 .band .tools{display:flex;gap:18px;font-family:var(--font);font-size:14px;letter-spacing:.06em;text-transform:uppercase}
 

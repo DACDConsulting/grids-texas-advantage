@@ -142,7 +142,7 @@ function pillarHTML(p){
     <div class="tools"><span>PDF</span><span>Email</span></div>
   </div></div>
   <div class="wrap page">
-    ${sideHTML(p.id,{seed:i*3+2,small:"Industries",big:"GRIDS"})}
+    ${sideHTML(p.id,{seed:i*3+2,small:"Pillar",big:p.n})}
     <div class="main">
       <section>
         <h2>${esc(p.headline)}</h2>

@@ -133,7 +133,7 @@ function homeHTML(){
         <p class="xlead">Select an area to see the matters.</p>
         <div class="xpanel">
           <div class="xnav" role="tablist" aria-label="Experience areas">
-            ${experience.map(([group, items], i)=>`<button type="button" class="xarea${i===0?" on":""}" role="tab" aria-selected="${i===0?"true":"false"}" data-x="${i}"><span>${esc(group)}</span><i>${items.length}</i></button>`).join("")}
+            ${experience.map(([group], i)=>`<button type="button" class="xarea${i===0?" on":""}" role="tab" aria-selected="${i===0?"true":"false"}" data-x="${i}"><span>${esc(group)}</span></button>`).join("")}
           </div>
           <div class="xstage">
             ${experience.map(([group, items], i)=>`<div class="xbody${i===0?" on":""}" role="tabpanel" data-xpanel="${i}" ${i===0?"":"hidden"}><h3 class="rd">${esc(group)}</h3>${group==="Public affairs"?'<span class="via">Through GRPR</span>':""}<ul class="bul">${items.map(item=>`<li>${esc(item.replace(" Services provided by GRPR.",""))}</li>`).join("")}</ul></div>`).join("")}

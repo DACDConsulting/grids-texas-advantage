@@ -129,7 +129,6 @@ ul.cols li{break-inside:avoid;margin-bottom:4px}
 .xpanel{display:grid;grid-template-columns:240px minmax(0,1fr);border:1px solid var(--line);min-height:280px}
 .xnav{display:flex;flex-direction:column;border-right:1px solid var(--line);background:var(--tint)}
 .xarea{display:flex;justify-content:space-between;gap:12px;align-items:baseline;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);padding:16px 16px;cursor:pointer;font-family:var(--font);font-size:16px;color:var(--head)}
-.xarea i{font-style:normal;font-size:12px;letter-spacing:.08em;color:var(--mute)}
 .xarea.on{background:var(--white);color:var(--burgundy);box-shadow:inset 3px 0 var(--gold)}
 .xarea:hover{color:var(--burgundy)}
 .xstage{padding:22px 24px}

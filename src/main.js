@@ -6,6 +6,13 @@ const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
 
 /* ---------- Sidebar ---------- */
 function sideHTML(active, visualTag){
+  const items = [];
+  if(active !== "overview"){
+    items.push(`<li><a href="#overview"><i>00</i>Overview</a></li>`);
+  }
+  PILLARS.filter(p => p.id !== active).forEach(p => {
+    items.push(`<li><a href="#${p.id}"><i>${p.n}</i>${p.short}</a></li>`);
+  });
   return `
   <aside class="side">
     <div class="side-visual"><span class="rule" aria-hidden="true"></span>
@@ -13,8 +20,7 @@ function sideHTML(active, visualTag){
     <div>
       <h4>The Texas Advantage</h4>
       <ul class="sidenav">
-        <li><a href="#overview" ${active==="overview"?'aria-current="page"':""}><i>00</i>Overview</a></li>
-        ${PILLARS.map(p=>`<li><a href="#${p.id}" ${active===p.id?'aria-current="page"':""}><i>${p.n}</i>${p.short}</a></li>`).join("")}
+        ${items.join("")}
       </ul>
     </div>
     <span class="sidelink">${carr(true)}View Related People</span>

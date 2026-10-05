@@ -59,7 +59,7 @@ function homeHTML(){
     </div>
     <div class="spot-head"><span class="hl-label">Six Pillars <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l5 4 5-4M3 9l5 4 5-4"/></svg></span></div>
     <div class="spots" id="pillars">
-      ${PILLARS.map(p=>`<a class="spot" href="#${p.id}"><span class="sn">Pillar ${p.n}</span><span class="st">${p.short}</span><span class="sm">${esc(p.homeHead)}</span><span class="sg">${carr()}</span></a>`).join("")}
+      ${PILLARS.map(p=>`<a class="spot" href="#${p.id}"><span class="st">${p.short}</span><span class="sm">${esc(p.homeHead)}</span><span class="sg">${carr()}</span></a>`).join("")}
     </div>
   </div></div>
 
@@ -142,7 +142,7 @@ function pillarHTML(p){
     <div class="tools"><span>PDF</span><span>Email</span></div>
   </div></div>
   <div class="wrap page">
-    ${sideHTML(p.id,{seed:i*3+2,small:"Pillar",big:p.n})}
+    ${sideHTML(p.id,{seed:i*3+2,small:"Industries",big:"GRIDS"})}
     <div class="main">
       <section>
         <h2>${esc(p.headline)}</h2>
@@ -162,8 +162,8 @@ function pillarHTML(p){
       </section>
       <section>
         <nav class="pager" aria-label="Pillar navigation">
-          <a href="#${prev.id}"><span>Previous · Pillar ${prev.n}</span><b>${esc(prev.title)}</b></a>
-          <a href="#${next.id}"><span>Next · Pillar ${next.n}</span><b>${esc(next.title)}</b></a>
+          <a href="#${prev.id}"><span>Previous</span><b>${esc(prev.title)}</b></a>
+          <a href="#${next.id}"><span>Next</span><b>${esc(next.title)}</b></a>
         </nav>
       </section>
     </div>

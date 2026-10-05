@@ -37,7 +37,27 @@ function homeHTML(){
     ["D","Development","Providing M&A, financing, tax planning, joint venture and investment support.",""],
     ["S","Security","Advising on cybersecurity, data privacy, compliance, certification planning and operational security through Gray Reed Advisory.","Through Gray Reed Advisory"]
   ];
-  const experience = ["Data center development and investment transactions","Private equity-sponsored project financing","Tax planning and incentive structures","Power generation and natural gas infrastructure","Real estate and land-use matters","Construction disputes and contract negotiation","Water rights and supply strategy","Public affairs and stakeholder engagement campaigns","Economic development initiatives and governmental relations support"];
+  const experience = [
+    ["Development and investment", [
+      "Represent landowners in joint venture and co-investment planning for data center development.",
+      "Represent a data center developer in negotiating equity funding from a private equity sponsor to fund project development."
+    ]],
+    ["Tax and incentives", [
+      "Represent data center investors, developers and landowners in complex tax planning, special allocations of depreciation, and project exit planning.",
+      "Secure local tax incentives for a data center developer."
+    ]],
+    ["Construction", [
+      "Represent a data center developer in a complex payment dispute with the general contractor constructing a large-scale data center.",
+      "Negotiate construction contracts on behalf of subcontractors and suppliers for data centers."
+    ]],
+    ["Energy infrastructure and land", [
+      "Represent a capital provider in funding natural gas pipeline development to supply a co-located power plant within a large data center project.",
+      "Represent a large landowner in negotiating land use and a potential co-investment with a data center developer seeking to develop natural gas pipeline, power generation and transmission facilities on site, co-located with the data center."
+    ]],
+    ["Public affairs", [
+      "Provide comprehensive public relations and communications services to a Colorado-based data center operator developing three facilities in Texas, including community engagement strategy, stakeholder and elected official outreach, media relations, social media management and issues readiness. Services provided by GRPR."
+    ]]
+  ];
   const serve = ["Data center developers","Hyperscalers and AI infrastructure providers","Data center operators","Private equity sponsors","Infrastructure funds","Real estate investors","Texas landowners","Utilities and power providers","Economic development organizations","National and international law firms"];
   const topics = ["Legislative updates","Water and infrastructure developments","Grid and power market intelligence","Tax incentive trends","Community and public affairs insights","Data center market intelligence"];
   return `
@@ -109,16 +129,12 @@ function homeHTML(){
       </section>
 
       <section id="experience">
-        <div class="split">
-          <div>
-            <h2>Representative Experience</h2>
-            <ul class="bul">${experience.map(e=>`<li>${esc(e)}</li>`).join("")}</ul>
-          </div>
-          <div>
-            <h2>Who We Serve</h2>
-            <ul class="bul">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
-          </div>
+        <h2>Representative Experience</h2>
+        <div class="xgrid">
+          ${experience.map(([group, items])=>`<div class="xgroup"><h3 class="rd">${esc(group)}</h3><ul class="bul">${items.map(item=>`<li>${esc(item)}</li>`).join("")}</ul></div>`).join("")}
         </div>
+        <h2 class="serve-head">Who We Serve</h2>
+        <ul class="bul cols">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
       </section>
 
       <section id="insights">

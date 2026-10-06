@@ -126,14 +126,14 @@ ul.cols li{break-inside:avoid;margin-bottom:4px}
 .kick{font-family:var(--font-semi);font-weight:700;color:var(--burgundy);font-size:19px}
 
 .xlead{margin:-6px 0 16px;max-width:62ch}
-.xacc{border-top:1px solid var(--line)}
-.xitem{border-bottom:1px solid var(--line)}
-.xacc-btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;background:transparent;border:0;padding:16px 2px;cursor:pointer;font-family:var(--font-light);font-style:italic;font-size:20px;color:var(--burgundy)}
-.xacc-btn::after{content:"+";font-style:normal;font-family:var(--font);color:var(--burgundy);font-size:22px;line-height:1}
-.xitem.on .xacc-btn::after{content:"–"}
-.xacc-body{padding:0 2px 18px}
-.xacc-body .via{display:inline-block;margin-bottom:10px}
-.xmatter{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.xcards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.xcard{text-align:left;background:var(--white);border:1px solid var(--line);border-bottom:3px solid transparent;padding:16px 16px 14px;cursor:pointer;font-family:var(--font-light);font-style:italic;font-size:18px;line-height:1.25;color:var(--burgundy)}
+.xcard:hover{border-color:var(--gold)}
+.xcard.on{background:var(--tint);border-color:var(--gold);border-bottom-color:var(--gold)}
+.xstage{margin-top:14px;background:var(--tint);border-left:4px solid var(--gold);padding:22px 24px}
+.xbody h3.rd{margin-bottom:8px}
+.xbody .via{display:inline-block;margin-bottom:12px}
+.xmatter{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .xmatter li{display:grid;gap:2px}
 .xmatter b{font-family:var(--font);font-weight:400;color:var(--head)}
 .serve-head{margin-top:28px}
@@ -234,6 +234,7 @@ footer nav span{opacity:.95}
   .spots{grid-template-columns:minmax(0,1fr)}
   .spot{min-height:0}
   .pgrid{grid-template-columns:minmax(0,1fr)}
+  .xcards{grid-template-columns:minmax(0,1fr)}
   .split{grid-template-columns:minmax(0,1fr)}
   .plinks{grid-template-columns:minmax(0,1fr)}
   .pc,.pc:nth-child(even){padding-left:0;padding-right:0;border-left:0}

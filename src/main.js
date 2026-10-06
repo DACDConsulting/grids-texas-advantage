@@ -112,9 +112,12 @@ function homeHTML(){
 
       <section id="experience">
         <h2>Representative Experience</h2>
-        <p class="xlead">Open an area to see the work.</p>
-        <div class="xacc">
-          ${experience.map(([group, items, via], i)=>`<div class="xitem${i===0?" on":""}"><button type="button" class="xacc-btn" aria-expanded="${i===0?"true":"false"}"><span>${esc(group)}</span></button><div class="xacc-body" ${i===0?"":"hidden"}>${via?`<span class="via">${esc(via)}</span>`:""}<ul class="xmatter">${items.map(([title, text])=>`<li>${title?`<b>${esc(title)}</b>`:""}<span>${esc(text)}</span></li>`).join("")}</ul></div></div>`).join("")}
+        <p class="xlead">Select an area to see the work.</p>
+        <div class="xcards" role="tablist" aria-label="Experience areas">
+          ${experience.map(([group], i)=>`<button type="button" class="xcard${i===0?" on":""}" role="tab" aria-selected="${i===0?"true":"false"}" data-x="${i}">${esc(group)}</button>`).join("")}
+        </div>
+        <div class="xstage">
+          ${experience.map(([group, items, via], i)=>`<div class="xbody${i===0?" on":""}" role="tabpanel" data-xpanel="${i}" ${i===0?"":"hidden"}><h3 class="rd">${esc(group)}</h3>${via?`<span class="via">${esc(via)}</span>`:""}<ul class="xmatter">${items.map(([title, text])=>`<li>${title?`<b>${esc(title)}</b>`:""}<span>${esc(text)}</span></li>`).join("")}</ul></div>`).join("")}
         </div>
         <h2 class="serve-head">Who We Serve</h2>
         <ul class="bul cols">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
@@ -204,15 +207,18 @@ function renderCountdown(){
 }
 
 document.addEventListener("click", e=>{
-  const btn = e.target.closest(".xacc-btn"); if(!btn) return;
-  const item = btn.closest(".xitem");
-  const acc = btn.closest(".xacc");
-  const open = !item.classList.contains("on");
-  acc.querySelectorAll(".xitem").forEach(row=>{
-    const on = open && row===item;
-    row.classList.toggle("on", on);
-    row.querySelector(".xacc-btn").setAttribute("aria-expanded", on?"true":"false");
-    row.querySelector(".xacc-body").hidden = !on;
+  const card = e.target.closest(".xcard"); if(!card) return;
+  const section = card.closest("#experience"); if(!section) return;
+  const id = card.getAttribute("data-x");
+  section.querySelectorAll(".xcard").forEach(btn=>{
+    const on = btn===card;
+    btn.classList.toggle("on", on);
+    btn.setAttribute("aria-selected", on?"true":"false");
+  });
+  section.querySelectorAll("[data-xpanel]").forEach(body=>{
+    const on = body.getAttribute("data-xpanel")===id;
+    body.classList.toggle("on", on);
+    body.hidden = !on;
   });
 });
 

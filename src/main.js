@@ -110,6 +110,16 @@ function homeHTML(){
         </ul>
       </section>
 
+      <section id="experience">
+        <h2>Representative Experience</h2>
+        <p class="xlead">Open an area to see the work.</p>
+        <div class="xacc">
+          ${experience.map(([group, items, via], i)=>`<div class="xitem${i===0?" on":""}"><button type="button" class="xacc-btn" aria-expanded="${i===0?"true":"false"}"><span>${esc(group)}</span></button><div class="xacc-body" ${i===0?"":"hidden"}>${via?`<span class="via">${esc(via)}</span>`:""}<ul class="xmatter">${items.map(([title, text])=>`<li>${title?`<b>${esc(title)}</b>`:""}<span>${esc(text)}</span></li>`).join("")}</ul></div></div>`).join("")}
+        </div>
+        <h2 class="serve-head">Who We Serve</h2>
+        <ul class="bul cols">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
+      </section>
+
       <section id="platform">
         <h2>The GRIDS Platform</h2>
         <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
@@ -132,16 +142,6 @@ function homeHTML(){
           <p>GRIDS serves as a trusted Texas partner for law firms whose clients are investing in the Texas data center market, strengthening the broader advisory team while respecting existing client relationships.</p>
           <a class="more" href="#local-counsel">${carr()}The outside counsel pathway</a>
         </div>
-      </section>
-
-      <section id="experience">
-        <h2>Representative Experience</h2>
-        <p class="xlead">Open an area to see the work.</p>
-        <div class="xacc">
-          ${experience.map(([group, items, via], i)=>`<div class="xitem${i===0?" on":""}"><button type="button" class="xacc-btn" aria-expanded="${i===0?"true":"false"}"><span>${esc(group)}</span></button><div class="xacc-body" ${i===0?"":"hidden"}>${via?`<span class="via">${esc(via)}</span>`:""}<ul class="xmatter">${items.map(([title, text])=>`<li>${title?`<b>${esc(title)}</b>`:""}<span>${esc(text)}</span></li>`).join("")}</ul></div></div>`).join("")}
-        </div>
-        <h2 class="serve-head">Who We Serve</h2>
-        <ul class="bul cols">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
       </section>
 
       <section id="insights">

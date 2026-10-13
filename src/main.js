@@ -65,7 +65,7 @@ function homeHTML(){
       ["", "Provide comprehensive public relations and communications services to a Colorado-based data center operator developing three facilities in Texas, including community engagement strategy, stakeholder and elected official outreach, media relations, social media management and issues readiness."]
     ], "Through GRPR"]
   ];
-  const serve = ["Data center developers","Hyperscalers and AI infrastructure providers","Data center operators","Private equity sponsors","Infrastructure funds","Real estate investors","Texas landowners","Utilities and power providers","Economic development organizations","National and international law firms"];
+  const serve = ["Data center developers","Hyperscalers and AI infrastructure providers","Data center operators","Private equity sponsors","Infrastructure funds","Real estate investors","Texas landowners","Utilities and power providers","Infrastructure contractors and suppliers","Material contractors and suppliers","Economic development organizations","National and international law firms"];
   const topics = ["Legislative updates","Water and infrastructure developments","Grid and power market intelligence","Tax incentive trends","Community and public relations insights","Data center market intelligence"];
   return `
   <div class="band"><div class="wrap">

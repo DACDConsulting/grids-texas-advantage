@@ -53,7 +53,8 @@ function homeHTML(){
     ]],
     ["Energy infrastructure and land", [
       ["", "Represent a capital provider in funding natural gas pipeline development to supply a co-located power plant within a large data center project."],
-      ["", "Represent a large landowner in negotiating land use and a potential co-investment with a data center developer seeking to develop natural gas pipeline, power generation and transmission facilities on site, co-located with the data center."]
+      ["", "Represent a large landowner in negotiating land use and a potential co-investment with a data center developer seeking to develop natural gas pipeline, power generation and transmission facilities on site, co-located with the data center."],
+      ["", "Represent a midstream company in connection with development of a pipeline for a division of Google in connection with development of a data center."]
     ]],
     ["Government relations", [
       ["Legislative and regulatory monitoring", "Track all legislative and regulatory activity affecting data center development in Texas, including bills, interim charges, committee hearings, and agency actions at the PUC, ERCOT, TCEQ, and TWDB."],

@@ -57,7 +57,7 @@ function homeHTML(){
       ["", "Represent a midstream company in connection with development of a pipeline for a division of Google in connection with development of a data center."]
     ]],
     ["Government relations", [
-      ["Legislative and regulatory monitoring", "Track all legislative and regulatory activity affecting data center development in Texas, including bills, interim charges, committee hearings, and agency actions at the PUC, ERCOT, TCEQ, and TWDB."],
+      ["Legislative and regulatory monitoring", "Interact with legislative and regulatory agencies regarding activity affecting data center development in Texas, including bills, interim charges, committee hearings, and agency actions at the PUC, ERCOT, TCEQ, and TWDB."],
       ["Executive action tracking", "Follow the Governor's data center directives and the resulting agency audits, permitting pauses, and reporting deadlines, and brief clients on what each means for their projects and timelines."],
       ["Stakeholder engagement", "Work with legislators, statewide leadership offices, agency staff, local officials, and industry coalitions to keep clients' projects and priorities in front of decision makers."]
     ]],

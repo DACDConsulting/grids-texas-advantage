@@ -97,7 +97,7 @@ function homeHTML(){
         <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
         <div class="prose" style="margin-bottom:22px">
           <p>Gray Reed's GRIDS initiative helps developers, investors, operators, landowners and outside counsel navigate the legal, regulatory, political and business realities that shape data center development across Texas.</p>
-          <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public relations and cybersecurity advisory services under a single coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
+          <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public relations and cybersecurity advisory services under a coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
         </div>
         <div class="gl">
           ${grids.map(g=>`<div><span class="L" aria-hidden="true">${g[0]}</span><div><h3 class="rd" style="margin-bottom:6px">${esc(g[1])}</h3><p>${esc(g[2])}</p>${g[3]?`<span class="via">${g[3]}</span>`:""}</div></div>`).join("")}

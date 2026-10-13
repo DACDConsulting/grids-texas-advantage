@@ -4,7 +4,7 @@ export const PILLARS = [
   headline:"Texas Policy Does Not Start in January",
   homeHead:"Policy shapes the project environment.",
   homeBody:"The legislative and regulatory decisions being made today will shape the future of data center development tomorrow.",
-  caps:["Government affairs","Legislative monitoring","Regulatory strategy","Grid and utility regulatory developments","Water policy","Economic development policy","Tax incentive strategies"],
+  caps:["Government relations","Legislative monitoring","Regulatory strategy","Grid and utility regulatory developments","Water policy","Economic development policy","Tax incentive strategies"],
   body:[
    "Most organizations watch legislation when bills are filed. The companies that gain a competitive advantage start much earlier.",
    "Long before the legislative session convenes, lawmakers, regulators, agency leaders, stakeholders and industry groups are shaping the policy conversations that ultimately determine how data center development will be regulated across Texas. Water usage, power demand, tax incentives, permitting, infrastructure investment and community impact have all become increasingly important topics in Austin.",
@@ -77,14 +77,14 @@ export const PILLARS = [
   headline:"National Reach. Texas Advantage.",
   homeHead:"National reach. Texas insight.",
   homeBody:"Many organizations entering Texas work with sophisticated national and international law firms. Yet Texas presents challenges that require Texas-specific knowledge.",
-  caps:["Local counsel support","Regulatory matters","Government affairs","Water law","Infrastructure development","Public affairs","Dispute resolution"],
+  caps:["Local counsel support","Regulatory matters","Government relations","Water law","Infrastructure development","Public affairs","Dispute resolution"],
   body:[
    "Many organizations investing in Texas already work with sophisticated national or international counsel. Even experienced outside counsel can encounter issues that are distinct to Texas.",
    "The state's energy markets operate differently. Water issues can require specialized knowledge. Legislative and regulatory priorities continue to evolve. Communities and local stakeholders bring different concerns to project development. Texas courts and local procedures may create additional considerations when disputes arise.",
    "Success often depends on having advisers who understand both the broader transaction and the Texas-specific realities that affect it.",
    "@GRIDS serves as a collaborative Texas partner for law firms advising clients across the data center ecosystem. Our role is to add targeted Texas capabilities, strengthen the broader counsel team and help protect the client relationship.",
-   "Whether the need involves a transaction, government affairs, infrastructure strategy, public affairs, development, regulatory issues or a dispute, the GRIDS team at Gray Reed works with outside counsel to help clients navigate Texas more effectively."],
-  focus:["Local counsel support","Texas regulatory matters","Government affairs","Water law","Energy and infrastructure","Public affairs","Development strategy","Dispute resolution"],
+   "Whether the need involves a transaction, government relations, infrastructure strategy, public affairs, development, regulatory issues or a dispute, the GRIDS team at Gray Reed works with outside counsel to help clients navigate Texas more effectively."],
+  focus:["Local counsel support","Texas regulatory matters","Government relations","Water law","Energy and infrastructure","Public affairs","Development strategy","Dispute resolution"],
   message:"The Texas Advantage includes a trusted Texas partner who strengthens the client's existing counsel team."}
 ];
 

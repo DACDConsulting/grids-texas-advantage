@@ -31,7 +31,7 @@ function sideHTML(active, visualTag){
 function homeHTML(){
   const entering = ["Texas politics","Texas power markets","Texas water challenges","Texas communities","Texas economic development systems","Texas regulatory environments","Texas business relationships"];
   const grids = [
-    ["G","Government Affairs & Public Relations","Helping clients navigate legislative, regulatory and community environments through the integrated capabilities of GRPR.","Through GRPR"],
+    ["G","Government Relations & Public Relations","Helping clients navigate legislative, regulatory and community environments through the integrated capabilities of GRPR.","Through GRPR"],
     ["R","Real Estate","Supporting site acquisition, land use, entitlements, water rights, easements, leasing and development.",""],
     ["I","Infrastructure","Addressing power, grid interconnection, transmission, natural gas, utility and construction matters.",""],
     ["D","Development","Providing M&A, financing, tax planning, joint venture and investment support.",""],
@@ -55,7 +55,7 @@ function homeHTML(){
       ["", "Represent a capital provider in funding natural gas pipeline development to supply a co-located power plant within a large data center project."],
       ["", "Represent a large landowner in negotiating land use and a potential co-investment with a data center developer seeking to develop natural gas pipeline, power generation and transmission facilities on site, co-located with the data center."]
     ]],
-    ["Government affairs", [
+    ["Government relations", [
       ["Legislative and regulatory monitoring", "Track all legislative and regulatory activity affecting data center development in Texas, including bills, interim charges, committee hearings, and agency actions at the PUC, ERCOT, TCEQ, and TWDB."],
       ["Executive action tracking", "Follow the Governor's data center directives and the resulting agency audits, permitting pauses, and reporting deadlines, and brief clients on what each means for their projects and timelines."],
       ["Stakeholder engagement", "Work with legislators, statewide leadership offices, agency staff, local officials, and industry coalitions to keep clients' projects and priorities in front of decision makers."]
@@ -95,7 +95,7 @@ function homeHTML(){
       <section id="understanding">
         <h2>Understanding the Texas Advantage</h2>
         <div class="prose">
-          <p class="lead">A project may begin as a land acquisition, but it quickly involves water rights, power procurement, grid interconnection requirements, tax incentives, construction, government affairs, public perception and stakeholder engagement.</p>
+          <p class="lead">A project may begin as a land acquisition, but it quickly involves water rights, power procurement, grid interconnection requirements, tax incentives, construction, government relations, public perception and stakeholder engagement.</p>
           <p>Most organizations entering Texas believe they are entering a real estate and infrastructure market. In reality, they are entering:</p>
           <ul class="bul cols">${entering.map(e=>`<li>${e}</li>`).join("")}</ul>
           <p>The Texas Advantage is the ability to see how these forces connect and make informed decisions before they become obstacles.</p>
@@ -128,7 +128,7 @@ function homeHTML(){
         <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
         <div class="prose" style="margin-bottom:22px">
           <p>Gray Reed's GRIDS initiative helps developers, investors, operators, landowners and outside counsel navigate the legal, regulatory, political and business realities that shape data center development across Texas.</p>
-          <p>Many firms can provide legal services. Few can combine legal counsel, government affairs, public affairs and cybersecurity advisory services under a single coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
+          <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public affairs and cybersecurity advisory services under a single coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
         </div>
         <div class="gl">
           ${grids.map(g=>`<div><span class="L" aria-hidden="true">${g[0]}</span><div><h3 class="rd" style="margin-bottom:6px">${esc(g[1])}</h3><p>${esc(g[2])}</p>${g[3]?`<span class="via">${g[3]}</span>`:""}</div></div>`).join("")}

@@ -60,12 +60,12 @@ function homeHTML(){
       ["Executive action tracking", "Follow the Governor's data center directives and the resulting agency audits, permitting pauses, and reporting deadlines, and brief clients on what each means for their projects and timelines."],
       ["Stakeholder engagement", "Work with legislators, statewide leadership offices, agency staff, local officials, and industry coalitions to keep clients' projects and priorities in front of decision makers."]
     ]],
-    ["Public affairs", [
+    ["Public relations", [
       ["", "Provide comprehensive public relations and communications services to a Colorado-based data center operator developing three facilities in Texas, including community engagement strategy, stakeholder and elected official outreach, media relations, social media management and issues readiness."]
     ], "Through GRPR"]
   ];
   const serve = ["Data center developers","Hyperscalers and AI infrastructure providers","Data center operators","Private equity sponsors","Infrastructure funds","Real estate investors","Texas landowners","Utilities and power providers","Economic development organizations","National and international law firms"];
-  const topics = ["Legislative updates","Water and infrastructure developments","Grid and power market intelligence","Tax incentive trends","Community and public affairs insights","Data center market intelligence"];
+  const topics = ["Legislative updates","Water and infrastructure developments","Grid and power market intelligence","Tax incentive trends","Community and public relations insights","Data center market intelligence"];
   return `
   <div class="band"><div class="wrap">
     <div><h1>Data Centers</h1></div>
@@ -128,7 +128,7 @@ function homeHTML(){
         <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
         <div class="prose" style="margin-bottom:22px">
           <p>Gray Reed's GRIDS initiative helps developers, investors, operators, landowners and outside counsel navigate the legal, regulatory, political and business realities that shape data center development across Texas.</p>
-          <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public affairs and cybersecurity advisory services under a single coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
+          <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public relations and cybersecurity advisory services under a single coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
         </div>
         <div class="gl">
           ${grids.map(g=>`<div><span class="L" aria-hidden="true">${g[0]}</span><div><h3 class="rd" style="margin-bottom:6px">${esc(g[1])}</h3><p>${esc(g[2])}</p>${g[3]?`<span class="via">${g[3]}</span>`:""}</div></div>`).join("")}

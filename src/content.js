@@ -33,7 +33,7 @@ export const PILLARS = [
   headline:"Community Acceptance Is Now Project Infrastructure",
   homeHead:"Community acceptance has become project infrastructure.",
   homeBody:"Local officials, community leaders, residents and stakeholders are more engaged than ever in conversations about water resources, power usage, economic development and quality of life.",
-  caps:["Public affairs","Community engagement","Stakeholder strategy","Media relations","Issues management","Reputation protection","Local government outreach"],
+  caps:["Public relations","Community engagement","Stakeholder strategy","Media relations","Issues management","Reputation protection","Local government outreach"],
   body:[
    "The conversation surrounding data centers has changed.",
    "Communities increasingly want to understand how projects will affect water supplies, electric infrastructure, local services, tax revenues, quality of life and long-term growth. Local stakeholders, elected officials, community leaders and residents are becoming engaged earlier in the development process.",
@@ -41,7 +41,7 @@ export const PILLARS = [
    "Organizations that engage stakeholders proactively can build trust, create stronger partnerships and address concerns before they become barriers. Those that wait until opposition emerges may find themselves reacting to a narrative that others have already defined.",
    "@The Texas Advantage comes from understanding both the opportunities and concerns that shape local decision-making.",
    "Through the Government Relations & Public Relations division, the GRIDS team helps clients plan stakeholder engagement, communicate project value, monitor public sentiment and navigate community, media and reputation issues throughout the project lifecycle."],
-  focus:["Stakeholder engagement","Public affairs","Community relations","Media strategy","Local government outreach","Issues management","Public sentiment monitoring","Reputation strategy"],
+  focus:["Stakeholder engagement","Public relations","Community relations","Media strategy","Local government outreach","Issues management","Public sentiment monitoring","Reputation strategy"],
   message:"The Texas Advantage means building support before opposition develops."},
  {id:"opportunity", n:"04", short:"Opportunity",
   title:"Where Data Centers Meet Opportunity",
@@ -77,14 +77,14 @@ export const PILLARS = [
   headline:"National Reach. Texas Advantage.",
   homeHead:"National reach. Texas insight.",
   homeBody:"Many organizations entering Texas work with sophisticated national and international law firms. Yet Texas presents challenges that require Texas-specific knowledge.",
-  caps:["Local counsel support","Regulatory matters","Government relations","Water law","Infrastructure development","Public affairs","Dispute resolution"],
+  caps:["Local counsel support","Regulatory matters","Government relations","Water law","Infrastructure development","Public relations","Dispute resolution"],
   body:[
    "Many organizations investing in Texas already work with sophisticated national or international counsel. Even experienced outside counsel can encounter issues that are distinct to Texas.",
    "The state's energy markets operate differently. Water issues can require specialized knowledge. Legislative and regulatory priorities continue to evolve. Communities and local stakeholders bring different concerns to project development. Texas courts and local procedures may create additional considerations when disputes arise.",
    "Success often depends on having advisers who understand both the broader transaction and the Texas-specific realities that affect it.",
    "@The Texas Advantage comes from Gray Reed serving as a collaborative Texas partner for law firms advising clients across the data center ecosystem. Our role is to add targeted Texas capabilities, strengthen the broader counsel team and help protect the client relationship.",
-   "Whether the need involves a transaction, government relations, infrastructure strategy, public affairs, development, regulatory issues or a dispute, the GRIDS team at Gray Reed works with outside counsel to help clients navigate Texas more effectively."],
-  focus:["Local counsel support","Texas regulatory matters","Government relations","Water law","Energy and infrastructure","Public affairs","Development strategy","Dispute resolution"],
+   "Whether the need involves a transaction, government relations, infrastructure strategy, public relations, development, regulatory issues or a dispute, the GRIDS team at Gray Reed works with outside counsel to help clients navigate Texas more effectively."],
+  focus:["Local counsel support","Texas regulatory matters","Government relations","Water law","Energy and infrastructure","Public relations","Development strategy","Dispute resolution"],
   message:"The Texas Advantage includes a trusted Texas partner who strengthens the client's existing counsel team."}
 ];
 

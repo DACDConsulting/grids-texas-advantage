@@ -92,6 +92,22 @@ function homeHTML(){
   <div class="wrap page">
     ${sideHTML("overview",{seed:7,small:"Industries",big:"GRIDS"})}
     <div class="main">
+      <section id="platform">
+        <h2>The GRIDS Platform</h2>
+        <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
+        <div class="prose" style="margin-bottom:22px">
+          <p>Gray Reed's GRIDS initiative helps developers, investors, operators, landowners and outside counsel navigate the legal, regulatory, political and business realities that shape data center development across Texas.</p>
+          <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public relations and cybersecurity advisory services under a single coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
+        </div>
+        <div class="gl">
+          ${grids.map(g=>`<div><span class="L" aria-hidden="true">${g[0]}</span><div><h3 class="rd" style="margin-bottom:6px">${esc(g[1])}</h3><p>${esc(g[2])}</p>${g[3]?`<span class="via">${g[3]}</span>`:""}</div></div>`).join("")}
+        </div>
+        <div class="bottomline">
+          <span class="lbl">The Bottom Line</span>
+          <p>If your project involves Texas, understanding Texas is an advantage. <b>That is why GRIDS exists.</b></p>
+        </div>
+      </section>
+
       <section id="understanding">
         <h2>Understanding the Texas Advantage</h2>
         <div class="prose">
@@ -121,22 +137,6 @@ function homeHTML(){
         </div>
         <h2 class="serve-head">Who We Serve</h2>
         <ul class="bul cols">${serve.map(s=>`<li>${esc(s)}</li>`).join("")}</ul>
-      </section>
-
-      <section id="platform">
-        <h2>The GRIDS Platform</h2>
-        <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
-        <div class="prose" style="margin-bottom:22px">
-          <p>Gray Reed's GRIDS initiative helps developers, investors, operators, landowners and outside counsel navigate the legal, regulatory, political and business realities that shape data center development across Texas.</p>
-          <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public relations and cybersecurity advisory services under a single coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
-        </div>
-        <div class="gl">
-          ${grids.map(g=>`<div><span class="L" aria-hidden="true">${g[0]}</span><div><h3 class="rd" style="margin-bottom:6px">${esc(g[1])}</h3><p>${esc(g[2])}</p>${g[3]?`<span class="via">${g[3]}</span>`:""}</div></div>`).join("")}
-        </div>
-        <div class="bottomline">
-          <span class="lbl">The Bottom Line</span>
-          <p>If your project involves Texas, understanding Texas is an advantage. <b>That is why GRIDS exists.</b></p>
-        </div>
       </section>
 
       <section id="counsel">

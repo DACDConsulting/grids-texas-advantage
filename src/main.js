@@ -23,7 +23,7 @@ function sideHTML(active, visualTag){
         ${items.join("")}
       </ul>
     </div>
-    <span class="sidelink">${carr(true)}View Related People</span>
+    <a class="sidelink" href="https://www.grayreed.com/Industries/Data-Centers#relatedPeople" target="_blank" rel="noopener">${carr(true)}View Related People</a>
   </aside>`;
 }
 

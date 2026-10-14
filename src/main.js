@@ -3,6 +3,9 @@ import { PILLARS, HOME_SECTIONS } from "./content.js";
 const ARROW = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h9M8.5 4l3.8 4-3.8 4"/></svg>';
 const carr = (dk)=>`<span class="carr${dk?" dk":""}" aria-hidden="true">${ARROW}</span>`;
 const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function toolsHTML(){
+  return `<div class="tools"><a href="#" data-print>PDF</a><a class="email-page" href="mailto:?subject=GRIDS%3A%20The%20Texas%20Advantage">Email</a></div>`;
+}
 
 /* ---------- Sidebar ---------- */
 function sideHTML(active, visualTag){
@@ -70,7 +73,7 @@ function homeHTML(){
   return `
   <div class="band"><div class="wrap">
     <div><h1>Data Centers</h1></div>
-    <div class="tools"><span>PDF</span><span>Email</span></div>
+    ${toolsHTML()}
   </div></div>
 
   <div class="feature" id="overview"><div class="wrap">
@@ -152,7 +155,13 @@ function homeHTML(){
         <h2>The Texas Advantage Series</h2>
         <p style="max-width:72ch">Stay informed on the policy, infrastructure, community and market developments shaping data center projects across Texas.</p>
         <div class="topics">${topics.map(t=>`<span>${esc(t)}</span>`).join("")}</div>
-        <div class="feed">[ Current GRIDS thought leadership loads here dynamically from the Gray Reed CMS ]</div>
+        <ul class="stories">
+          <li><a href="https://www.grayreed.com/NewsResources/Thought-Leadership/291202/Governor-Abbott-Directs-TWDB-to-Enforce-Water-Use-Reporting-Requirements-Against-Data-Centers-and-Major-Water-Users-Orders-Coordination-with-ERCOT-Interconnection-Audit" target="_blank" rel="noopener">Governor Abbott Directs TWDB to Enforce Water Use Reporting</a></li>
+          <li><a href="https://www.grayreed.com/NewsResources/Thought-Leadership/287602/Data-Centers-and-Water-Collide-in-Texas" target="_blank" rel="noopener">Data Centers and Water Collide in Texas</a></li>
+          <li><a href="https://www.grayreed.com/NewsResources/Thought-Leadership/285502/Governor-Abbott-Directs-Major-Shift-in-Texas-Data-Center-Policy" target="_blank" rel="noopener">Governor Abbott Directs Major Shift in Texas Data Center Policy</a></li>
+          <li><a href="https://www.grayreed.com/NewsResources/Thought-Leadership/282102/Texas-Legislature-Targets-Data-Center-Growth-What-Industry-Stakeholders-Need-to-Know" target="_blank" rel="noopener">Texas Legislature Targets Data Center Growth</a></li>
+          <li><a href="https://www.grayreed.com/portalresource/lookup/wosid/cp-base-4-228310/media.name=/Data%20Centers.pdf" target="_blank" rel="noopener">GRPR Texas Capitol Report: Data Centers</a></li>
+        </ul>
       </section>
     </div>
   </div>`;
@@ -166,7 +175,7 @@ function pillarHTML(p){
   return `
   <div class="band"><div class="wrap">
     <div><h1>${esc(p.title)}</h1></div>
-    <div class="tools"><span>PDF</span><span>Email</span></div>
+    ${toolsHTML()}
   </div></div>
   <div class="wrap page">
     ${sideHTML(p.id,{seed:i*3+2,small:"Pillar",big:p.n})}
@@ -246,7 +255,17 @@ function show(key){
     const target = HOME_SECTIONS.includes(key) && key!=="overview" ? document.getElementById(key) : null;
     if(target) target.scrollIntoView({block:"start"}); else window.scrollTo(0,0);
   }
+  wireTools();
 }
+function wireTools(){
+  document.querySelectorAll("[data-print]").forEach(a=>{
+    a.onclick = e=>{ e.preventDefault(); window.print(); };
+  });
+  document.querySelectorAll(".email-page").forEach(a=>{
+    a.href = "mailto:?subject="+encodeURIComponent("GRIDS: The Texas Advantage")+"&body="+encodeURIComponent(location.href);
+  });
+}
+
 function go(key){
   show(key);
   try{ if(location.hash !== "#"+key) history.pushState(null,"","#"+key); }catch(err){}

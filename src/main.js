@@ -111,7 +111,7 @@ function homeHTML(){
         <h2>The GRIDS Platform</h2>
         <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
         <div class="prose" style="margin-bottom:22px">
-          <p>Gray Reed's GRIDS initiative helps developers, investors, operators, landowners and outside counsel navigate the legal, regulatory, political and business realities that shape data center development across Texas.</p>
+          <p>Gray Reed's GRIDS initiative is comprised of attorneys across all of our practice areas along with professionals from our Gray Reed Advisory Services business. This platform helps developers, investors, operators, landowners and outside counsel navigate the legal, regulatory, political and business realities that shape data center development across Texas.</p>
           <p>Many firms can provide legal services. Few can combine legal counsel, government relations, public relations and cybersecurity advisory services under a coordinated platform. The GRIDS name reflects five coordinated areas of capability:</p>
         </div>
         <div class="gl">

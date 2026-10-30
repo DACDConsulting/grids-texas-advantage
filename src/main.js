@@ -36,7 +36,7 @@ function homeHTML(){
   const grids = [
     ["G","Government Relations & Public Relations","Helping clients navigate legislative, regulatory and community environments through the integrated capabilities of GRPR.","Through GRPR"],
     ["R","Real Estate","Supporting site acquisition, land use, entitlements, water rights, easements, leasing and development.",""],
-    ["I","Infrastructure","Addressing power, grid interconnection, transmission, natural gas, utility and construction matters.",""],
+    ["I","Infrastructure","Addressing power, grid interconnection, transmission, natural gas, utility, construction and permitting matters.",""],
     ["D","Development","Providing M&A, financing, tax planning, joint venture and investment support, including drafting and negotiating agreements.",""],
     ["S","Security","Advising on cybersecurity, data privacy, compliance, certification planning and operational security through Gray Reed Advisory.","Through Gray Reed Advisory"]
   ];

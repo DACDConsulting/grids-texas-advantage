@@ -16,7 +16,7 @@ export const PILLARS = [
  {id:"infrastructure", n:"02", short:"Infrastructure",
   title:"Where Data Centers Meet Infrastructure",
   headline:"The Real Story of a Project happens Above and Below the Surface",
-  homeHead:"A data center may start with a site. Success is determined by infrastructure.",
+  homeHead:"A data center may start with a property, but success is determined by infrastructure and by how well it is built.",
   homeBody:"Power availability, transmission capacity, interconnection requirements, water access, transportation networks and utility infrastructure increasingly dictate whether projects move forward on schedule and within budget.",
   caps:["Site selection","Power procurement","Grid interconnection","Water law","Utility infrastructure","Transmission planning","Construction and development support"],
   body:[

@@ -96,6 +96,17 @@ function homeHTML(){
   <div class="wrap page">
     ${sideHTML("overview",{seed:7,small:"Industries",big:"GRIDS"})}
     <div class="main">
+      <section id="understanding">
+        <h2>Understanding the Texas Advantage</h2>
+        <div class="prose">
+          <p class="lead">A project may begin as a land acquisition, but it quickly involves water rights, power procurement, grid interconnection requirements, tax incentives, construction, government relations, public perception and stakeholder engagement.</p>
+          <p>Most organizations entering Texas believe they are entering a real estate and infrastructure market. In reality, they are entering:</p>
+          <ul class="bul cols">${entering.map(e=>`<li>${e}</li>`).join("")}</ul>
+          <p>The Texas Advantage is the ability to see how these forces connect and make informed decisions before they become obstacles.</p>
+          <p class="kick">Success requires understanding how Texas works.</p>
+        </div>
+      </section>
+
       <section id="platform">
         <h2>The GRIDS Platform</h2>
         <h3 class="rd">One Coordinated Team. One Texas Strategy.</h3>
@@ -109,17 +120,6 @@ function homeHTML(){
         <div class="bottomline">
           <span class="lbl">The Bottom Line</span>
           <p>If your project involves Texas, understanding Texas is an advantage. <b>That is why GRIDS exists.</b></p>
-        </div>
-      </section>
-
-      <section id="understanding">
-        <h2>Understanding the Texas Advantage</h2>
-        <div class="prose">
-          <p class="lead">A project may begin as a land acquisition, but it quickly involves water rights, power procurement, grid interconnection requirements, tax incentives, construction, government relations, public perception and stakeholder engagement.</p>
-          <p>Most organizations entering Texas believe they are entering a real estate and infrastructure market. In reality, they are entering:</p>
-          <ul class="bul cols">${entering.map(e=>`<li>${e}</li>`).join("")}</ul>
-          <p>The Texas Advantage is the ability to see how these forces connect and make informed decisions before they become obstacles.</p>
-          <p class="kick">Success requires understanding how Texas works.</p>
         </div>
       </section>
 

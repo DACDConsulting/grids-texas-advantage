@@ -40,7 +40,7 @@ export const PILLARS = [
    "As a result, community engagement is no longer simply a communications exercise. It is a business and project-development strategy.",
    "Organizations that engage stakeholders proactively can build trust, create stronger partnerships and address concerns before they become barriers. Those that wait until opposition emerges may find themselves reacting to a narrative that others have already defined.",
    "@The Texas Advantage comes from understanding both the opportunities and concerns that shape local decision-making.",
-   "Through the Government Relations & Public Relations division, the GRIDS team helps clients plan stakeholder engagement, communicate project value, monitor public sentiment and navigate community, media and reputation issues throughout the project lifecycle."],
+   "Through Gray Reed's Government Relations & Public Relations division, the GRIDS team helps clients plan stakeholder engagement, communicate project value, monitor public sentiment and navigate community, media and reputation issues throughout the project lifecycle."],
   focus:["Stakeholder engagement","Public relations","Community relations","Media strategy","Local government outreach","Issues management","Public sentiment monitoring","Reputation strategy"],
   message:"The Texas Advantage means building support before opposition develops."},
  {id:"opportunity", n:"04", short:"Opportunity",

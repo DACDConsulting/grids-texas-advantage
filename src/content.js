@@ -25,7 +25,8 @@ export const PILLARS = [
    "These issues increasingly determine whether a project can move from concept to operation on schedule. They shape the agreements, capital commitments and development decisions that must be made long before ground is broken. They also carry through every phase of construction, from early site work and procurement of long-lead equipment to commissioning and turnover.",
    "Texas offers significant opportunity for data center development, but it is not a uniform market. Conditions vary across regions, utilities, transmission systems, groundwater resources and local jurisdictions. A development strategy that works in one part of the state may not translate directly to another.",
    "@The Texas Advantage comes from understanding how power, water, land, infrastructure and construction interact across the state's evolving development landscape.",
-   "The GRIDS frameworks brings together real estate, energy, water, construction and development capabilities to help clients identify constraints early, coordinate critical workstreams and create a stronger path from site evaluation through operation."],
+   "The GRIDS frameworks brings together real estate, energy, water, construction and development legal capabilities to help clients identify constraints early, coordinate critical workstreams and create a stronger path from site evaluation through operation.
+"],
   focus:["Site selection and site control","Power procurement","Grid interconnection","Water availability and rights","Land acquisition and entitlements","Utility and pipeline infrastructure","Transmission planning","Infrastructure and construction agreements"],
   message:"The Texas Advantage means understanding the infrastructure realities beneath the map."},
  {id:"messaging", n:"03", short:"Messaging",

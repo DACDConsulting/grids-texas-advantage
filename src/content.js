@@ -91,5 +91,5 @@ export const PILLARS = [
 export const HOME_SECTIONS = ["overview","understanding","pillars","six","platform","counsel","experience","insights"];
 
 /* Home-page lists. Edit copy here; layout stays in main.js. */
-export const ENTERING = ["Texas politics","Texas power markets","Texas water challenges","Texas communities","Texas economic development systems","Texas regulatory environments","Texas business relationships"];
+export const ENTERING = ["Texas politics","Texas power markets","Texas water challenges","Texas communities","Texas economic development systems","Texas regulatory and cybersecurity environments","Texas business relationships"];
 

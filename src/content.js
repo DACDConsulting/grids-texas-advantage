@@ -66,7 +66,7 @@ export const PILLARS = [
   caps:["Legislative relationships","Regulatory engagement","Economic development partnerships","Industry relationships","Utility relationships","Local stakeholder engagement","Strategic introductions"],
   body:[
    "Every state has laws. Texas has relationships.",
-   "Projects move more effectively when the right people are engaged at the right time. Regulatory questions can be addressed earlier. Stakeholders can become partners. Community concerns can be surfaced before they escalate. Opportunities can emerge through conversations that do not begin with a formal process.",
+   "Projects move more effectively when the right people are engaged at the right time. Regulatory questions can be addressed earlier. Stakeholders can become partners. Community concerns can be surfaced before they escalate. Opportunities can emerge through conversations that do not begin with a formal process. Gray Reed attorneys and business professionals have the experience helping clients navigate these relationship and conversations.",
    "Successful projects are often supported by trusted relationships across government, business, infrastructure and local communities. Those relationships are not created overnight. They are built through consistent engagement, credibility and a working knowledge of the institutions and industries driving growth across Texas.",
    "@The Texas Advantage comes from understanding the people behind the process.",
    "GRIDS connects clients with professionals who have spent their careers working throughout Texas and helping organizations navigate the environments where business, policy, infrastructure and development intersect."],

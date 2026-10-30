@@ -81,7 +81,7 @@ export const PILLARS = [
   body:[
    "Many organizations investing in Texas already work with sophisticated national or international counsel. Even experienced outside counsel can encounter issues that are distinct to Texas.",
    "The state's energy markets operate differently. Water issues can require specialized knowledge. Legislative and regulatory priorities continue to evolve. Communities and local stakeholders bring different concerns to project development. Texas courts and local procedures may create additional considerations when disputes arise.",
-   "Success often depends on having advisers who understand both the broader transaction and the Texas-specific realities that affect it.",
+   "Success often depends on having advisers who understand both the broader transaction and the Texas-specific realities that affect it. Gray Reed offers 40 years operating within the Texas landscape.",
    "@The Texas Advantage means having an established Texas law firm on your team, advising clients and their counsel across the data center ecosystem. We add targeted Texas capabilities, complement the broader counsel team, and help protect the client relationship.",
    "Whether the need involves a transaction, government relations, infrastructure strategy, public relations, development, regulatory issues or a dispute, the GRIDS team at Gray Reed works with outside counsel to help clients navigate Texas more effectively."],
   focus:["Local counsel support","Texas regulatory matters","Government relations","Water law","Energy and infrastructure","Public relations","Development strategy","Dispute resolution"],

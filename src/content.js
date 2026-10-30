@@ -30,8 +30,8 @@ export const PILLARS = [
   message:"The Texas Advantage means understanding the infrastructure realities beneath the map."},
  {id:"messaging", n:"03", short:"Messaging",
   title:"Where Data Centers Meet Messaging",
-  headline:"Community Acceptance Is Now Project Infrastructure",
-  homeHead:"Community acceptance has become project infrastructure.",
+  headline:"Community Acceptance Is Now a Project Cornerstone",
+  homeHead:"Community Acceptance Is Now a Project Cornerstone.",
   homeBody:"Local officials, community leaders, residents and stakeholders are more engaged than ever in conversations about water resources, power usage, economic development and quality of life.",
   caps:["Public relations","Community engagement","Stakeholder strategy","Media relations","Issues management","Reputation protection","Local government outreach"],
   body:[

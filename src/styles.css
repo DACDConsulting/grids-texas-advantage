@@ -73,7 +73,7 @@ p{margin:0}
 
 .spot-head{margin-top:clamp(40px,5vw,64px);margin-bottom:14px}
 .spot-head .hl-label{display:inline-flex;border-bottom:2px solid var(--gold);padding-bottom:6px}
-.spots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.spots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:clamp(40px,5vw,64px)}
 .spot{position:relative;display:flex;flex-direction:column;gap:8px;min-height:170px;padding:20px 22px 22px;background:#1C1E22;color:var(--white);text-decoration:none;border-top:3px solid transparent;transition:background .15s,border-color .15s}
 .spot:nth-child(3n+2){background:#2B2E34}
 .spot:hover{background:var(--burgundy);border-top-color:var(--gold)}

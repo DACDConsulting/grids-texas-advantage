@@ -87,7 +87,6 @@ function homeHTML(){
         <p>Billions of dollars are flowing into hyperscale campuses, AI infrastructure, power generation, transmission systems, water infrastructure and digital connectivity projects across the state. Yet the factors that determine project success extend well beyond site selection and construction.</p>
       </div>
     </div>
-    <div class="spot-head"><span class="hl-label">Six Pillars <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l5 4 5-4M3 9l5 4 5-4"/></svg></span></div>
     <div class="spots" id="pillars">
       ${PILLARS.map(p=>`<a class="spot" href="#${p.id}"><span class="st">${p.short}</span><span class="sm">${esc(p.homeHead)}</span><span class="sg">${carr()}</span></a>`).join("")}
     </div>

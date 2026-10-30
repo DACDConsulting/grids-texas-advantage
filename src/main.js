@@ -32,7 +32,7 @@ function sideHTML(active, visualTag){
 
 /* ---------- Home ---------- */
 function homeHTML(){
-  const entering = ["Texas politics","Texas power markets","Texas water challenges","Texas communities","Texas economic development systems","Texas regulatory and cybersecurity environments","Texas business relationships"];
+  const entering = ["Texas politics","Texas power markets","Texas water challenges","Texas communities","Texas economic development systems","Texas regulatory and cybersecurity environments","Texas construction and permitting considerations","Texas business relationships"];
   const grids = [
     ["G","Government Relations & Public Relations","Helping clients navigate legislative, regulatory and community environments through the integrated capabilities of GRPR.","Through GRPR"],
     ["R","Real Estate","Supporting site acquisition, land use, entitlements, water rights, easements, leasing and development.",""],

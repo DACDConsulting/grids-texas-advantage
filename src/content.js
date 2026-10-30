@@ -20,7 +20,7 @@ export const PILLARS = [
   homeBody:"Power availability, transmission capacity, interconnection requirements, water access, transportation networks and utility infrastructure increasingly dictate whether projects move forward on schedule and within budget.",
   caps:["Site selection","Power procurement","Grid interconnection","Water law","Utility infrastructure","Transmission planning","Construction and development support"],
   body:[
-   "A data center may start with a property, but success is determined by infrastructure.",
+   "A data center may start with a property, but success is determined by infrastructure and by how well it is built.",
    "Power availability. Water access. Transmission capacity. Interconnection requirements. Pipeline infrastructure. Transportation corridors. Site readiness.",
    "These issues increasingly determine whether a project can move from concept to operation on schedule. They also shape the agreements, capital commitments and development decisions that must be made long before construction begins.",
    "Texas offers significant opportunity for data center development, but it is not a uniform market. Conditions vary across regions, utilities, transmission systems, groundwater resources and local jurisdictions. A development strategy that works in one part of the state may not translate directly to another.",

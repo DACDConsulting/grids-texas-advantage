@@ -88,7 +88,7 @@ function homeHTML(){
       </div>
     </div>
     <div class="spots" id="pillars">
-      ${PILLARS.map(p=>`<a class="spot" href="#${p.id}"><span class="st">${p.short}</span><span class="sm">${esc(p.homeHead)}</span><span class="sg">${carr()}</span></a>`).join("")}
+      ${["relationships","messaging","infrastructure","opportunity","policy","local-counsel"].map(id=>PILLARS.find(p=>p.id===id)).map(p=>`<a class="spot" href="#${p.id}"><span class="st">${p.short}</span><span class="sm">${esc(p.homeHead)}</span><span class="sg">${carr()}</span></a>`).join("")}
     </div>
   </div></div>
 
